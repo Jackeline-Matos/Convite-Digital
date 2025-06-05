@@ -1,0 +1,34 @@
+.main-container{
+    & #img-event{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+
+}
+
+
+fieldset {
+  border: none;
+}
+
+.event-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 56rem;
+ 
+  & label{
+      margin: 1.2rem 0 1.2rem 0;
+  }
+
+  & img{
+
+  }
+
+}
+
+ .event-datetime{
+    display: flex;
+    gap:1.5rem;
+
+}

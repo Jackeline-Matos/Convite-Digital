@@ -29,11 +29,13 @@ aside {
       h1 {
         font: var(--font-logo);
         color: var(--pink);
+        margin-top: 1.6rem;
       }
 
       p {
-        font-family: var(--font-body-md);
+        font: var(--font-body-md);
         color: var(--text-heading);
+        margin-top: .4rem;
       }
     }
     & img {
