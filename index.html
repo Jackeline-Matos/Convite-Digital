@@ -15,18 +15,22 @@
   </head>
   <body>
     <div id="app">
-      <aside>
-        <div class="aside-container">
-          <div class="aside-infos">
-            <img
-              src="./assets/icon/Logo.svg"
-              alt="logo de um chapeu de festa de aniversário"
-            />
-            <h1>Festivite</h1>
-            <p>Crie um convite digital para o seu evento</p>
+      <div id="background-color">
+        <aside>
+          <div class="aside-container">
+            <img src="/assets/img/Background.png" alt="" />
+            <div class="aside-infos">
+              <img
+                src="./assets/icon/Logo.svg"
+                alt="logo de um chapeu de festa de aniversário"
+              />
+
+              <h1>Festivite</h1>
+              <p>Crie um convite digital para o seu evento</p>
+            </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
       <main>
         <div class="main-container">
           <h1>Crie seu convite</h1>
@@ -34,7 +38,8 @@
             <fieldset>
               <legend>
                 <p>
-                  <img id="img-event"
+                  <img
+                    id="img-event"
                     src="./assets/icon/calendar.svg"
                     alt="icone de um calendário"
                   />Sobre o evento
@@ -45,17 +50,15 @@
                 <input type="text" id="title" placeholder="Nome do evento" />
               </div>
               <div class="event-datetime">
+                <div class="event-wrapper" id="event-start">
+                  <label for="start">Inicio</label>
+                  <input type="datetime-local" id="start" />
+                </div>
 
-                  <div class="event-wrapper" id="event-start">
-                    <label for="start">Inicio</label>
-                    <input type="datetime-local" id="start" />
-                  </div>
-    
-                  <div class="event-wrapper">
-                    <label for="end">Fim</label>
-                    <input type="datetime-local" id="end" />
-                  </div>
-
+                <div class="event-wrapper">
+                  <label for="end">Fim</label>
+                  <input type="datetime-local" id="end" />
+                </div>
               </div>
 
               <div class="event-wrapper">

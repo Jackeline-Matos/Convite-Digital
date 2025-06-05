@@ -1,30 +1,48 @@
+
 #app {
   display: grid;
   grid-template-columns: 36% 64%;
-  height: 100vh;
-  background-color: var(--shape-body);
-
   padding: 4rem;
+
+  max-width: 130rem;
+ 
+
+  margin: 10rem;
+
+  border-radius: 1.2rem;
+
+  background-color: var(--shape-background);
+  padding: 2rem;
+  
 }
 
 aside {
-  background-image: url(../assets/img/Background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   border: solid 0.1rem;
   border-radius: 1.2rem;
+  
+  position: sticky;
+  top:0;
+  overflow: auto;
 
-  height: 100vh;
-  margin: 2rem 4rem 2rem 2rem;
+  img{
+    width: 100%;
+    height: 100;
 
+    display: block;
+    border-radius: 1.2rem;
+   
+  }
   & .aside-container {
-    max-width: 40rem;
-    max-height: 72.8rem;
+     position: relative;
 
     & .aside-infos {
-      padding: 1.6rem;
+
+      position: absolute;
+      top: 0;
+
+      padding: 3.2rem;
+
 
       h1 {
         font: var(--font-logo);
@@ -37,19 +55,40 @@ aside {
         color: var(--text-heading);
         margin-top: .4rem;
       }
-    }
-    & img {
-      width: 4.5rem;
-      height: 4.8rem;
+      & img {
+        width: 4.5rem;
+        height: 4.8rem;
+      }
     }
   }
 }
 
 main {
-  overflow: auto;
-  padding: 8rem;
+  
+  border-radius: 1.2rem;
+ 
 
-  & .main-container {
-    max-width: 82rem;
+  .main-container{
+    h1{
+      padding: 0 8rem 0;
+    }
+
+    form{
+      margin: 4rem 8rem 8rem 8rem;
+      legend p{
+        display: flex;
+        gap:1.2rem;
+        font: var( --font-heading-sm);
+        color: var(--text-heading);
+      }
+
+      label{
+        font:var( --font-body-sm);
+        color: var(--text-body);
+
+      }
+    }
+
+   
   }
 }

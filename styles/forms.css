@@ -1,4 +1,11 @@
 .main-container{
+
+    & h1{
+       font: var(--font-heading-md); 
+       color: var(--text-heading);
+       margin: 8rem 0 4rem 0 ;
+    }
+
     & #img-event{
         width: 2.4rem;
         height: 2.4rem;
